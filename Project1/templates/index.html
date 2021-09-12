@@ -1,0 +1,250 @@
+
+<!doctype html>
+<!--[if lt IE 7]> <html class="no-js ie6 oldie" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js ie7 oldie" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js ie8 oldie" lang="en"> <![endif]-->
+<!--[if IE 9]>    <html class="no-js ie9" lang="en"> <![endif]-->
+<!--[if gt IE 9]><!-->
+<html> <!--<![endif]-->
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
+    <meta name="description" content="Flatfy Free Flat and Responsive HTML5 Template ">
+    <meta name="author" content="">
+
+    <title>CS527 DBDS Project</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="/static/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom Google Web Font -->
+    <link href="/static/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <link href='http://fonts.useso.com/css?family=Lato:100,300,400,700,900,100italic,300italic,400italic,700italic,900italic'
+          rel='stylesheet' type='text/css'>
+    <link href='http://fonts.useso.com/css?family=Arvo:400,700' rel='stylesheet' type='text/css'>
+
+    <!-- Custom CSS-->
+    <link href="/static/css/general.css" rel="stylesheet">
+
+    <!-- Owl-Carousel -->
+    <link href="/static/css/custom.css" rel="stylesheet">
+    <link href="/static/css/owl.carousel.css" rel="stylesheet">
+    <link href="/static/css/owl.theme.css" rel="stylesheet">
+    <link href="/static/css/style.css" rel="stylesheet">
+    <link href="/static/css/animate.css" rel="stylesheet">
+
+    <!-- Magnific Popup core CSS file -->
+    <link rel="stylesheet" href="/static/css/magnific-popup.css">
+
+    <script src="/static/js/modernizr-2.6.2.min.js"></script>  <!-- Modernizr /-->
+    <script src="/static/js/PIE_IE9.js"></script>
+    <script src="/static/js/PIE_IE678.js"></script>
+
+    <style type="text/css">
+        <!--
+        @import url("/static/css/style1.css");
+        -->
+        .button {
+                background-color: #4CAF50; /* Green */
+                border: none;
+                color: white;
+                padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+
+.button1 {
+  background-color: white;
+  color: black;
+  border: 2px solid #4CAF50;
+}
+
+.button1:hover {
+  background-color: #4CAF50;
+  color: white;
+}
+.button5 {
+  background-color: white;
+  color: black;
+  border: 2px solid #555555;
+}
+
+.button5:hover {
+  background-color: #555555;
+  color: white;
+}
+    </style>
+    <!--[if lt IE 9]>
+            <script src="js/html5shiv.js"></script>
+        <![endif]-->
+
+    <script>
+        function clearCache() {
+            var table = document.getElementById("rounded-corner");
+            var child1 = document.getElementById("tbhead");
+            var child2 = document.getElementById("tbmain");
+            table.removeChild(child1);
+            table.removeChild(child2);
+            document.getElementById("time_elapsed").innerHTML = "";
+        }
+
+        function Reset() {
+            document.getElementById("finish").addEventListener("click", function () {
+                document.getElementById("reset").click();
+                clearCache();
+                location.href = "/#contact";
+            });
+        }
+    </script>
+
+    <script src="/static/js/myScript.js"></script>
+</head>
+
+<body id="home">
+
+<!-- Preloader -->
+<div id="preloader">
+    <div id="status"></div>
+</div>
+
+<!-- FullScreen -->
+<div class="intro-header">
+    <div class="col-xs-12 text-center text-right abcen1" >
+
+        <h1 class="h1_home wow fadeIn" data-wow-delay="0.4s">Query-Executer</h1>
+      <h3 class="h2_home wow fadeIn" data-wow-delay="0.6s">Group 7</h3>
+        <h3 class="h3_home wow fadeIn" data-wow-delay="0.6s">Devarsh Shah</h3>
+        <h3 class="h3_home wow fadeIn" data-wow-delay="0.6s">Sohail Abbas</h3>
+        <h3 class="h3_home wow fadeIn" data-wow-delay="0.6s">Siddharth KS</h3>
+
+    </div>
+    <!-- /.container -->
+    <div class="col-xs-12 text-center abcen wow fadeIn">
+        <div class="button_down ">
+            <a class="imgcircle wow bounceInUp" data-wow-duration="1.5s" href="#credits"> <img class="img_scroll"
+                                                                                               src="/static/img/icon/circle.png"
+                                                                                               alt=""> </a>
+        </div>
+    </div>
+</div>
+
+<!-- Credits -->
+<div id="credits" class="content-section-a">
+    <div class="container">
+        <div class="row">
+
+            <div class="col-md-6 col-md-offset-3 text-center wrap_title">
+                <h2>Choose Your Database</h2>
+            </div>
+
+            <div class="col-sm-6  block wow bounceIn">
+                <div class="row">
+                    <div class="col-md-4 box-icon rotate">
+                        <i class="fa fa-table fa-4x "> </i>
+                    </div>
+                    <div class="col-md-8 box-ct">
+                        <h3> MySQL </h3>
+                        <p> You can query data from MySql database </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6 block wow bounceIn">
+                <div class="row">
+                    <div class="col-md-4 box-icon rotate">
+                        <i class="fa fa-table fa-4x "> </i>
+                    </div>
+                    <div class="col-md-8 box-ct">
+                        <h3> RedShift </h3>
+                        <p> You can query data from Amazon RedShift </p>
+                    </div>
+                </div>
+            </div>
+            <div></div>
+            <div class="col-sm-6  block wow bounceIn">
+                <div class="row">
+                    <div class="col-md-4 box-icon rotate">
+                        <i class="fa fa-table fa-4x "> </i>
+                    </div>
+                    <div class="col-md-8 box-ct">
+                        <h3> MongoDB </h3>
+                        <p> You can query data from Mongo database </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<!-- Contact -->
+<div id="contact" class="content-section-a">
+    <div class="container">
+        <div class="row">
+
+            <div class="col-md-6 col-md-offset-3 text-center wrap_title">
+                <h2>Let's Query</h2>
+            </div>
+
+            <form action="http://127.0.0.1:5000/index" method="post">
+                <div class="col-md-6 col-md-offset-3">
+                    <div class="form-group text-center">
+
+                        MySQL <input type="radio"  class="form-check-input" id="mysql" name="database" value="mysql" checked>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        RedShift <input type="radio"  class="form-check-input" id="redshift" name="database" value="redshift">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        MongoDB <input type="radio"  class="form-check-input" id="mongo" name="database" value="mongo">
+                    </div>
+
+                    <div class="form-group text-center">
+                        <label for="InputMessage">Query Language</label>
+                        <div class="input-group ">
+                                <textarea name="query" id="query" class="form-control" placeholder="SELECT * FROM TABLE" rows="5" required></textarea>
+                            <span class="input-group-addon"><i class="glyphicon glyphicon-ok form-control-feedback"></i></span>
+                        </div>
+                    </div>
+                    <button class = 'button button1'>Execute</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <input type="reset" name="reset" id="reset" value="Reset"
+                           class="button button5">
+
+                </div>
+            </form>
+            <hr class="featurette-divider hidden-lg">
+        </div>
+    </div>
+</div>
+
+
+<!-- JavaScript -->
+<script src="/static/js/jquery-1.10.2.js"></script>
+<script src="/static/js/bootstrap.js"></script>
+<script src="/static/js/owl.carousel.js"></script>
+<script src="/static/js/script.js"></script>
+<!-- StikyMenu -->
+<script src="/static/js/stickUp.min.js"></script>
+<script type="text/javascript">
+    jQuery(function ($) {
+        $(document).ready(function () {
+            $('.navbar-default').stickUp();
+
+        });
+    });
+
+</script>
+<!-- Smoothscroll -->
+<script type="text/javascript" src="/static/js/jquery.corner.js"></script>
+<script src="/static/js/wow.min.js"></script>
+<script>
+    new WOW().init();
+</script>
+<script src="/static/js/classie.js"></script>
+<script src="/static/js/uiMorphingButton_inflow.js"></script>
+<!-- Magnific Popup core JS file -->
+<script src="/static/js/jquery.magnific-popup.js"></script>
+</body>
+
+</html>
